@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import { cwd } from 'node:process';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -15,6 +16,7 @@ const getDiffInformation = (data1, data2) => {
 
   const keys = _.sortBy(_.union(keys1, keys2));
 
+  // eslint-disable-next-line array-callback-return
   const result = keys.map((key) => {
     const value1 = data1[key];
     const value2 = data2[key];
