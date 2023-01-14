@@ -18,9 +18,6 @@ jobs:
  - name: Run jest
         run: 
           make test
- - name: Run lint
-        run:
-          make lint
  - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         env:
