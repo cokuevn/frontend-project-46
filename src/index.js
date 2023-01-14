@@ -67,7 +67,7 @@ const gendiff = (filepath1, filepath2) => {
       case 'unchanges':
         return `    ${diff.key}: ${diff.value}`;
       case 'changet':
-        return `  - ${diff.key}: ${diff.value1} \n  + ${diff.key}: ${diff.value2}`;
+        return `  - ${diff.key}: ${diff.value1}\n  + ${diff.key}: ${diff.value2}`;
       case 'added':
         return `  + ${diff.key}: ${diff.value}`;
       default:

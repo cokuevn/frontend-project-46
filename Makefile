@@ -12,3 +12,6 @@ fixLint:
 
 pret:
 	npx prettier --write .
+
+test:
+	npm run test
